@@ -94,12 +94,8 @@ def unification_bit(a, b):
     bit_a = translate_to_bit(a)
     bit_b = translate_to_bit(b)
     uni_bit = []
-    for i,_ in enumerate(a):
-        if bit_a[i] == 0:
-            if bit_b[i] == 0:
-                uni_bit.append(0)
-                continue
-        uni_bit.append(1)
+    for i, _ in enumerate(bit_a):
+        uni_bit.append(bit_a[i] | bit_b[i])
     return uni_bit
 
 

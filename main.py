@@ -21,11 +21,17 @@ print("intersection: " )
 print(intersection(arrayA, arrayB))
 
 
-print("difference: " )
+print("difference a, b: " )
 print(difference(arrayA, arrayB))
 
-print("supplementing: ")
+print("difference b, a: " )
+print(difference(arrayB, arrayA))
+
+print("supplementing a: ")
 print(supplementing(arrayA))
+
+print("supplementing b: ")
+print(supplementing(arrayB))
 
 print("symetrical_difference: " )
 print(symetrical_difference(arrayA, arrayB))
@@ -53,8 +59,11 @@ print("bit intersection: ")
 print(intersection_bit(arrayA, arrayB))
 
 
-print("bit difference: ")
+print("bit difference a, b: ")
 print(difference_bit(arrayA, arrayB))
+
+print("bit difference b, a: ")
+print(difference_bit(arrayB, arrayA))
 
 
 print("bit symetrical difference: ")
